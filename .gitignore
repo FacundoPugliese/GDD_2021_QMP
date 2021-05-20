@@ -1,3 +1,11 @@
 
 .idea/
 .target/
+*.class
+*.properties
+*.lst
+*.jar
+*.class
+target/classes/Prendas/Prenda.class
+*.class
+target/classes/Prendas/Prenda.class
