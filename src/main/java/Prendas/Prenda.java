@@ -1,37 +1,26 @@
 package Prendas;
 
-public class Prenda {
-    TipoDePrenda tipoDePrenda;
-    Material material;
-    Color colorPrincipal;
-    Color colorSecundario;
+import Prendas.Atributos.Color;
+import Prendas.Atributos.Material;
+import Prendas.Atributos.TipoDePrenda;
 
-    public Prenda (TipoDePrenda tipoDePrenda , Material material , Color colorPrincipal){
+public class Prenda {
+    private TipoDePrenda tipoDePrenda;
+    private Material material;
+    private Color colorPrincipal;
+    private Color colorSecundario;
+    private int temperaturaAdecuada;
+
+    public Prenda (TipoDePrenda tipoDePrenda , Material material , Color colorPrincipal , Color colorSecundario , int temperatura){
+
         this.tipoDePrenda = tipoDePrenda;
         this.material = material;
         this.colorPrincipal = colorPrincipal;
-        if(tipoDePrenda == null || material == null || colorPrincipal == null){
-            throw new RuntimeException("Se cargaron valores nullos en la prenda.");
-        }
+        this.colorSecundario = colorSecundario;
+        this.temperaturaAdecuada = temperatura;
     }
 
+    public int getTemperaturaAdecuada(){return this.temperaturaAdecuada;}
 
-    public String getPrenda() {
-       if(colorSecundario != null) {
-           return "Prenda{" +
-                   "tipoDePrenda=" + tipoDePrenda.name() +
-                   "categoria =" + tipoDePrenda.getCategoria() +
-                   ", material=" + material.name() +
-                   ", colorPrincipal=" + colorPrincipal.name() +
-                   ", colorSecundario=" + colorSecundario.name() +
-                   '}';
-       }else
-       {
-           return "Prenda{" +
-                   "tipoDePrenda=" + tipoDePrenda.name() +
-                   ", categoria =" + tipoDePrenda.getCategoria() +
-                   ", material=" + material.name() +
-                   ", colorPrincipal=" + colorPrincipal.name() + '}' ;
-       }
-    }
+
 }
