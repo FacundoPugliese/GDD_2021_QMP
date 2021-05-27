@@ -1,6 +1,6 @@
-package Atuendos;
+package atuendos;
 
-import Prendas.Prenda;
+import prendas.Prenda;
 
 
 

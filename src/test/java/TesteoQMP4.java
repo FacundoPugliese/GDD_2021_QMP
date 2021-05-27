@@ -1,6 +1,6 @@
-import Atuendos.Guardarropa;
-import Prendas.Atributos.*;
-import Prendas.Prenda;
+import atuendos.Guardarropa;
+import prendas.atributos.*;
+import prendas.Prenda;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

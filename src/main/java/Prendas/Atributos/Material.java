@@ -1,4 +1,4 @@
-package Prendas.Atributos;
+package prendas.atributos;
 
 import java.util.Objects;
 

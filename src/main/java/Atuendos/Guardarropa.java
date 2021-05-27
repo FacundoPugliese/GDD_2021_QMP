@@ -1,7 +1,8 @@
-package Atuendos;
+package atuendos;
 
-import Prendas.Prenda;
+import prendas.Prenda;
 import Clima.Temperatura;
+
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -28,10 +29,19 @@ import java.util.stream.Collectors;
               .collect(Collectors.toList());
     }
 
+    public void quitarPrenda(Prenda p){
+      this.prendas.remove(p);
+    }
+
+    public void agregarPrenda(Prenda p) {
+      this.prendas.add(p);
+    }
 
     @Override
     public List<Sugerencia> generarSugerenciasDesde(List<Prenda> prendasAptas) {
       //TODO
       return null;
     }
+
+
   }

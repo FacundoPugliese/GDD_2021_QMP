@@ -1,8 +1,7 @@
-package Prendas;
+package prendas;
 
-import Prendas.Atributos.Color;
-import Prendas.Atributos.Material;
-import Prendas.Atributos.TipoDePrenda;
+import prendas.atributos.*;
+
 
 public class Prenda {
     private TipoDePrenda tipoDePrenda;

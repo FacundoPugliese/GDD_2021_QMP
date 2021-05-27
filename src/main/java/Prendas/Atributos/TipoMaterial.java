@@ -1,4 +1,4 @@
-package Prendas.Atributos;
+package prendas.atributos;
 
 public enum TipoMaterial {
   ALGODON,
