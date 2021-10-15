@@ -11,6 +11,14 @@ public class Usuario {
   private List<Guardarropa> guardarropasCompartidos;
   private List<Propuesta> propuestas;
 
+  /* QMP6 */
+  private Sugerencia sugerenciaDiaria;
+
+  public Sugerencia getSugerenciaDiaria(){ return this.sugerenciaDiaria};
+
+
+  /* QMP6 */
+
   public void compartirGuardarropa(Usuario usser , Guardarropa guardarropa){
     usser.agregarGuardarropaCompartido(guardarropa);
   }
